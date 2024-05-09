@@ -1,0 +1,189 @@
+body {
+  background-image: url("Warung-sembako.png");
+  background-repeat: no-repeat; /* Opsional: mengatur ulang gambar jika ingin diulang */
+  background-size: cover; /* Opsional: mengatur ukuran gambar */
+  font-family: "Poppins", sans serif;
+}
+
+.kalkulator h3 {
+  position: absolute;
+  top: 5px; /* Atur jarak antara h6 dan bagian atas .kalkulator */
+  left: 12%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.kalkulator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 230, 230);
+  border: 5px solid rgb(36, 35, 35);
+  width: 22.5%;
+  height: 590px;
+  border-radius: 10px;
+}
+
+.inputAngka {
+  margin-top: 16px;
+  margin-bottom: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 11px;
+  background-color: rgb(144, 199, 62);
+  border: 4px solid rgb(36, 35, 35);
+  height: 115px;
+  width: 89.5%;
+  font-size: 80px;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Menambahkan efek 2D */
+}
+
+.btnAngka0 {
+  padding: 13px 56px;
+  margin-top: -10px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: rgb(93, 93, 93);
+  color: white;
+  margin-left: 18px;
+  margin-right: -5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btnAngka0:hover {
+  background-image: linear-gradient(to right, #444444, #7e7e7e, #444444);
+  color: #ffffff; /* Mengatur warna teks ke putih agar cocok dengan latar belakang */
+}
+
+.btnAngka {
+  padding: 13px 23px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: rgb(93, 93, 93);
+  color: white;
+  margin-left: 18px;
+  margin-right: -5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: -100px;
+  margin-top: -100px;
+}
+
+.btnAngka:hover {
+  background-image: linear-gradient(to right, #444444, #7e7e7e, #444444);
+  color: #ffffff; /* Mengatur warna teks ke putih agar cocok dengan latar belakang */
+}
+
+.btnOperasi {
+  padding: 11px 0;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 27px;
+  color: white;
+  background-color: rgb(251, 31, 31);
+  margin-left: 18px;
+  margin-right: -5px;
+  width: 20%;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
+.btnOperasi:hover {
+  background-image: linear-gradient(to right, #ff4141, #f96767, #ff4141);
+  color: #ffffff; /* Mengatur warna teks ke putih agar cocok dengan latar belakang */
+}
+
+.btnClear {
+  padding: 13px 21.5px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: rgb(255, 187, 40);
+  color: white;
+  margin-left: 18px;
+  margin-right: -5px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.btnClear:hover {
+  /* Menambahkan warna latar belakang saat dihover */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 187, 40),
+    rgb(255, 205, 96),
+    rgb(255, 187, 40)
+  );
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan saat dihover */
+}
+
+.btnPersen {
+  padding: 13px 18.5px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: rgb(255, 187, 40);
+  color: white;
+  margin-left: 18px;
+  margin-right: -5px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.btnComa {
+  padding: 13px 25.5px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: rgb(255, 187, 40);
+  color: white;
+  margin-left: 18px;
+  margin-right: -5px;
+  transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.btnComa:hover {
+  /* Menambahkan warna latar belakang saat dihover */
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 187, 40),
+    rgb(255, 205, 96),
+    rgb(255, 187, 40)
+  );
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan saat dihover */
+}
+
+.btnHasil {
+  padding: 13px 26px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 25px;
+  background-color: rgb(255, 187, 40);
+  color: white;
+  margin-left: 18px;
+  margin-right: -5px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-top: -10px;
+}
+
+.btnHasil:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 187, 40),
+    rgb(255, 205, 96),
+    rgb(255, 187, 40)
+  );
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Menambahkan efek bayangan saat dihover */
+}
